@@ -34,7 +34,7 @@ opt.backspace = "indent,eol,start" -- Make backspace work as you'd expect
 -- clipboard
 opt.clipboard:append("unnamedplus") -- Use system clipboard as default register
 
--- split windows: I dont personally use neovims split window feature, but if you do you can uncomment the options below
--- opt.splitright = true -- Vertically splits to the right
--- opt.splitbelow = true -- Horizontally splits below
+-- Split windows
+opt.splitright = true -- Vertically splits to the right
+opt.splitbelow = true -- Horizontally splits below
 

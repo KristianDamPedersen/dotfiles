@@ -18,11 +18,12 @@
       environment.systemPackages =
         [ 
           pkgs.vim
-          # pkgs.neofetch
+          pkgs.neofetch
           pkgs.neovim
           pkgs.dbeaver-bin # Relies on postgresql
           pkgs.postgresql_16
           pkgs.home-manager
+          pkgs.python3
         ];
 
       # Auto upgrade nix package and the daemon service.
@@ -31,7 +32,7 @@
 
       # Options nescessary for home-manager
       users.users.kristianp.home = "/Users/kristianp";
-      # nix.configureBuildUsers = true;
+      nix.configureBuildUsers = true;
       nix.useDaemon = true;
 
       # Necessary for using flakes on this system.
@@ -59,7 +60,7 @@
       modules = [ 
         configuration 
         home-manager.darwinModules.home-manager {
-          home-manager.useGlobalPkgs = true;
+          home-manager.useGlobalPkgs = false;
           home-manager.useUserPackages = true;
           home-manager.users.kristianp = import ./home.nix; # This is symlinked to config
         }

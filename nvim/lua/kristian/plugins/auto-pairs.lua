@@ -7,7 +7,6 @@ return {
   },
   config = function()
     local autopairs = require("nvim-autopairs")
-    
     -- Configure autopairs 
     autopairs.setup({
       check_ts = true, -- enable treesitter

@@ -24,7 +24,9 @@ return {
       ensure_installed = {
         "lua",
         "gitignore",
-        "dockerfile"
+        "dockerfile",
+        "python",
+        "terraform",
       },
     })
   end

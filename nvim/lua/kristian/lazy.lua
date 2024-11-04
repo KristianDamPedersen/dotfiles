@@ -13,6 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Calls all the individual setup files inside the kristian/plugins folder.
-require("lazy").setup("kristian.plugins", {
+require("lazy").setup({ { import = "kristian.plugins" }, { import = "kristian.plugins.lsp" } }, {
   checker = { enabled = true }
 })

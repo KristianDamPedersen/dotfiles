@@ -7,13 +7,13 @@ return {
   },
   config = function()
     local autopairs = require("nvim-autopairs")
-    -- Configure autopairs 
+    -- Configure autopairs
     autopairs.setup({
-      check_ts = true, -- enable treesitter
+      check_ts = true,                      -- enable treesitter
       ts_config = {
-        lua = { "sting" }, -- don't add pairs in lua sting treesitter nodes
+        lua = { "sting" },                  -- don't add pairs in lua sting treesitter nodes
         javascript = { "template_string" }, -- don't add pairs in JS template strings
-        java = false, -- don't check treesitter in Java
+        java = false,                       -- don't check treesitter in Java
       }
     })
 

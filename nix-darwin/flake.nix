@@ -24,6 +24,9 @@
           pkgs.postgresql_16
           pkgs.home-manager
           pkgs.python3
+          pkgs.eksctl # EKS CLI
+          pkgs.xclip # Copy to clipboard
+          pkgs.plantuml-c4 # Plantuml incl. C4 sprites
         ];
 
       # Auto upgrade nix package and the daemon service.

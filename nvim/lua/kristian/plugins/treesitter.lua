@@ -27,9 +27,8 @@ return {
         "dockerfile",
         "python",
         "terraform",
+        "elixir"
       },
     })
   end
 }
-
-

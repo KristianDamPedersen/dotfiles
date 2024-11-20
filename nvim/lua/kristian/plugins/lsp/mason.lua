@@ -21,6 +21,8 @@ return {
         "lua_ls",      -- Lua LSP
         "pyright",     -- Python LSP
         "terraformls", -- Terraform LSP
+        "csharp_ls",   -- C#
+        -- "elixirls",    -- Elixir LSP
       }
     })
 

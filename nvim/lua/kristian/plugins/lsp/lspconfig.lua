@@ -65,6 +65,20 @@ return {
           },
         })
       end,
+
+      ["elixirls"] = function()
+        lspconfig["elixirls"].setup({
+          capabilities = capabilities,
+          cmd          = { "elixir-ls" },
+          flags        = {
+            debounce_text_changes = 150
+          },
+          elixirLS     = {
+            dyalizerEnabled = true,
+            fetchDeps = false,
+          }
+        })
+      end
     })
   end
 }

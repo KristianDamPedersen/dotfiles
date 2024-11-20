@@ -10,22 +10,22 @@ opt.relativenumber = true
 opt.number = true
 
 -- Tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
+opt.tabstop = 4       -- 2 spaces for tabs (prettier default)
+opt.shiftwidth = 4    -- 2 spaces for indent width
+opt.expandtab = true  -- expand tab to spaces
 opt.autoindent = true -- copy indent fom current line when starting a new one
 
-opt.wrap = false -- Disable line wrapping
+opt.wrap = false      -- Disable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true -- if you include mixed case in your search, assumes yo want case-insentive
+opt.smartcase = true  -- if you include mixed case in your search, assumes yo want case-insentive
 
 
 -- Turn on termguicolors
 opt.termguicolors = true
 opt.background = "dark" -- Dark mode when available
-opt.signcolumn = "yes" -- Show sign column so that text doesn't shift
+opt.signcolumn = "yes"  -- Show sign column so that text doesn't shift
 
 
 -- backspace
@@ -37,4 +37,3 @@ opt.clipboard:append("unnamedplus") -- Use system clipboard as default register
 -- Split windows
 opt.splitright = true -- Vertically splits to the right
 opt.splitbelow = true -- Horizontally splits below
-
